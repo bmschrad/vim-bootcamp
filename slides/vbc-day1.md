@@ -129,3 +129,34 @@ simple examples of copying an existing line and pasting it to a new line underne
     - `:!` run bash programs from vim
     - `:e` `:w` `:q` open files from disk to edit, save file and quit vim
     - can be accessed by typing `:` in normal mode
+
+---
+
+-> # Efficient file navigation <-
+
+*How to move around easier*
+
+^
+* general browsing
+    - `G` `gg` go to the bottom or top of file
+    ^
+    - `Ctrl+d` `Ctrl+u` page down and page up
+    ^
+
+* targeted edit (get to line or word fast)
+    - `/` `?` search in front or behind cursor (use to target words and lines)
+        - `n` `N` move to next or prev match
+        - `set incsearch` if you want highlighting help
+    ^
+    - `<lines>[j,k]` move a specfic number of lines down or up
+    ^
+    - `:<linenumber>` jump to line number
+    ^
+
+* word and character movements (moving within a line)
+    - `f[char]` `F[char]` look forward or back from cursor to [char] in line
+        - `;` `:` move to next or prev [char] match
+    ^
+    - `w` `b` go to next word or prev word
+    ^
+    - `h` `j` `k` `l`  one character movements use only if you miss the mark
