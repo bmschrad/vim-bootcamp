@@ -1,0 +1,19 @@
+This is a test line
+
+<! -- HTML block demo --!>
+
+<body>
+    <div class="foo">
+        <div>placeholder replace with real text</div>
+    </div>
+<body>
+
+
+// Code block demo
+
+public void foo(string s)
+{
+    Console.WriteLine("foo is the best");
+    var a = 1+2;
+}
+

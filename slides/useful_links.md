@@ -4,5 +4,6 @@
 [Coming Home to Vim](http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
 
 -> *Screencasts* <-
+[Learing Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)
 [Vim from novice to professional](http://derekwyatt.org/vim/tutorials/novice/)
 [All episodes of Vimcast.org](http://vimcasts.org/episodes/archive)
