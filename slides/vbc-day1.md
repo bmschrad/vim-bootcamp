@@ -7,7 +7,7 @@
 -> *Edit text at the speed of thought* <-
 
 ^
-* day 1 topics:
+* _Day 1 Topics:_
     ^
     - why vim
     ^
@@ -16,7 +16,7 @@
     - efficient file navigation
 
 ^
-* why did I start using vim?
+* _Why Did I Start Using Vim?_
     ^
     - needed to quickly and easily modify files in linux docker containers
     ^
@@ -34,7 +34,7 @@
 
 *There are many reasons to use vim and no it's not because you can't figure out how to exit it*
 
-* great community
+* _Great Community_
     - lots of plugins
     ^
     - large support network
@@ -42,7 +42,7 @@
     - free
     ^
 
-* portablility
+* _Portablility_
     - runs on anything anywhere (windows, mac, linux, ssh, embedded, etc)
     ^
     - easy and fast to setup on current or new system, only a 14MB download
@@ -50,8 +50,9 @@
     - setting are all kept in plain text (dotfiles) which makes sharing and version control a breeze
     ^
     - a lot of the commands and actions are also used in a lot of other linux programs
+    ^
 
-* efficiency
+* _Efficiency_
     - modal operation leads to fast navigation and very powerful editing commands
     ^
     - learning one program for all your editing needs
@@ -60,12 +61,12 @@
 
 -> # Why Vim? <-
 
-*levels of text editing efficiencies*
+*Levels of Text Editing Efficiencies*
 
-simple examples of copying an existing line and pasting it to a new line underneath
+Simple examples of copying an existing line and pasting it to a new line underneath
 
 ^
-* noob time
+* _Noob time_
     ^
     - 1. take your paw off the keyboard and grab the mouse
     ^
@@ -73,90 +74,101 @@ simple examples of copying an existing line and pasting it to a new line underne
     ^
     - 3. click the end of the line
     ^
-    - 4. hit `Enter`
+    - 4. hit *Enter*
     ^
     - 5. right-click and select paste
     ^
     - 6. question your life choices
     ^
 
-* normal modeless text editor (advanced keyboard shortcut commands)
+* _Normal Modeless Text Editor_ (advanced keyboard shortcut commands)
     ^
-    - 1. hit `Home` to get to beginning of line
-    - 2. hold `Shift+End` to highlight to end of line
-    - 3. `Ctrl+c` to copy
-    - 4. `End` to de-highlight line
-    - 5. `Enter` to insert line directly underneath current line
-    - 6. `Ctrl-v` to finally paste in previous line 
+    - 1. hit *Home* to get to beginning of line
+    - 2. hold *Shift+End* to highlight to end of line
+    - 3. *Ctrl-c* to copy
+    - 4. *End* to de-highlight line
+    - 5. *Enter* to insert line directly underneath current line
+    - 6. *Ctrl-v* to finally paste in previous line 
 
 ^
-* vim
+* _Vim_
     ^
-    - 1. `yyp`
+    - 1. *yyp*
 
 ---
 
 -> # Modes <-
 
-*The four main modes of Vim*
+*The Four Main Modes of Vim*
 
 ^
-* normal mode (the mode you should spend most of your time in)
+* _Normal Mode_ (the mode you should spend most of your time in)
     ^
     - browsing files
     - finding words and navigating lines
-    - modify\copy\paste lines, words, characters
+    - modify/\copy/\paste lines, words, characters
     - undo and redo changes
     - all other modes start from normal mode
 ^
-* insert mode (a lot like the default mode in a modeless editor)
+
+* _Insert Mode_ (a lot like the default mode in a modeless editor)
     ^
     - insert new text
     - many ways to access
-        - `o` `O` insert line below or above current line
-        - `i` `I` start insert before character or start of line
-        - `a` `A` start insert after character or append end of line
+        - *o O* insert line below or above current line
+        - *i I* start insert before character or start of line
+        - *a A* start insert after character or append end of line
 ^
-* visual mode (highlight text)
+
+* _Visual Mode_ (highlight text)
     ^
     - used to hightlight text to perfom actions on
-    - can be accessed by `v` or `V` to select by character or by line
+    - can be accessed by *v or V* to select by character or by line
 ^
-* command mode (execute commands in vim)
+
+* _Command Mode_ (execute commands in vim)
     ^
-    - perfom commands on file or range in file
     - interact with vim variables, functions and plugins
-    - `:!` run bash programs from vim
-    - `:e` `:w` `:q` open files from disk to edit, save file and quit vim
-    - can be accessed by typing `:` in normal mode
+    - *:e :w :q* open files from disk to edit, save file and quit vim
+    - *:!* run bash programs from vim
+    - can be accessed by typing *:* in normal mode
 
 ---
 
--> # Efficient file navigation <-
+-> # Basic Setting <-
 
-*How to move around easier*
+_Visual Change_
+
+cursor          *Edit->Profile Preference->Cursor Shape->[Block, Underline]*
+colorscheme     *:set colorscheme*
+
+---
+
+-> # Efficient File Navigation <-
+
+How to move around easier
 
 ^
-* general browsing
-    - `G` `gg` go to the bottom or top of file
+* _General Browsing_
+    - *G gg* go to the bottom or top of file
     ^
-    - `Ctrl+d` `Ctrl+u` page down and page up
-    ^
-
-* targeted edit (get to line or word fast)
-    - `/` `?` search in front or behind cursor (use to target words and lines)
-        - `n` `N` move to next or prev match
-        - `set incsearch` if you want highlighting help
-    ^
-    - `<lines>[j,k]` move a specfic number of lines down or up
-    ^
-    - `:<linenumber>` jump to line number
+    - *Ctrl+d Ctrl+u* page down and page up
     ^
 
-* word and character movements (moving within a line)
-    - `f[char]` `F[char]` look forward or back from cursor to [char] in line
-        - `;` `:` move to next or prev [char] match
+* _Targeted Edit_ (get to line or word fast)
     ^
-    - `w` `b` go to next word or prev word
+    - */ ?* search in front or behind cursor (use to target words and lines)
     ^
-    - `h` `j` `k` `l`  one character movements use only if you miss the mark
+        - *n N* move to next or prev match
+    ^
+    - *:set incsearch* if you want highlighting help
+    ^
+
+* _Word and Character Movements_ (moving within a line)
+    - *w b* move forward a word or back a word
+    ^
+    - *f[char] F[char]* look forward or back from cursor to [char] in line
+    ^
+        - *;* move to next [char] match
+    ^
+    - *h j k l*  one character movements use only if you miss the mark or very close
