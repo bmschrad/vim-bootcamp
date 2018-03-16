@@ -172,3 +172,13 @@ How to move around easier
         - *;* move to next [char] match
     ^
     - *h j k l*  one character movements use only if you miss the mark or very close
+
+---
+
+-> # End of Day 1 <-
+
+More resources
+
+blog    [Why Vim](http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/)
+
+video   [Vim from novice to professional](http://derekwyatt.org/vim/tutorials/novice/)
