@@ -72,7 +72,7 @@ verbs       *y* *yy* yank selection or line
 - yank a word and paste it
 
 ^
-*:registers* checkout registers
+*:registers* take a look at all your registers
 ^
 - try out a non default register
 
