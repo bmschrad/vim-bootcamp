@@ -4,7 +4,7 @@
 
 -> # Into the details <-
 
--> *You're problem with Vim is you don't grok Vi <-
+-> *You're problem with Vim is you don't grok Vi* <-
 
 ^
 * _Day 2 Topics:_
@@ -21,151 +21,87 @@
 
 Learning the Language of Vim
 
-* _Great Community_
-    - lots of plugins
+Talk to Vim in *verb, modifier, object* sentences
+^
+
+|   *verb*   | *modifier* |  *object* |
+|----------|----------|---------|
+| *c* change | *i* inside | *w* word  |
+| *d* delete | *a* around | *"* quote |
+| *y* yank   | *t* till   | *(* paren |
+| *v* visual | *f* find   | *t* tag   |
+
+^
+* _Verb Object_
+    - *dw* delete word
     ^
-    - large support network
+    - *cw* change word
     ^
-    - free
+    - *ct[c]* change to character
+    ^
+    - problems with verb object or verb modifier
     ^
 
-* _Portablility_
-    - runs on anything anywhere (windows, mac, linux, ssh, embedded, etc)
+* _Verb Modifier Object_
+    - *diw* delete inside word
     ^
-    - easy and fast to setup on current or new system, only a 14MB download
+    - *daw* delete around word (word + 1 space)
     ^
-    - setting are all kept in plain text (dotfiles) which makes sharing and version control a breeze
+    - *ciw* change inside word
     ^
-    - a lot of the commands and actions are also used in a lot of other linux programs
+    - *ci"* change inside quote
     ^
 
-* _Efficiency_
-    - modal operation leads to fast navigation and very powerful editing commands
-    ^
-    - learning one program for all your editing needs
+Aim for repeatability so you can use *.*
 
 ---
 
--> # Why Vim? <-
+-> # Registers <-
 
-*Levels of Text Editing Efficiencies*
-
-Simple examples of copying an existing line and pasting it to a new line underneath
+Cut *delete*, Copy *yank* and Paste *put* the Vim way
 
 ^
-* _Noob time_
-    ^
-    - 1. take your paw off the keyboard and grab the mouse
-    ^
-    - 2. slowly and painfuly drag your cursor over the existing line or double click
-    ^
-    - 3. click the end of the line
-    ^
-    - 4. hit *Enter*
-    ^
-    - 5. right-click and select paste
-    ^
-    - 6. question your life choices
-    ^
-
-* _Normal Modeless Text Editor_ (advanced keyboard shortcut commands)
-    ^
-    - 1. hit *Home* to get to beginning of line
-    - 2. hold *Shift+End* to highlight to end of line
-    - 3. *Ctrl-c* to copy
-    - 4. *End* to de-highlight line
-    - 5. *Enter* to insert line directly underneath current line
-    - 6. *Ctrl-v* to finally paste in previous line 
+register    *:registers*
+verbs       *y* *yy* yank selection or line
+            *d* *dd* delete selection or line
+            *p* *"[#]* put from default register or specific register
 
 ^
-* _Vim_
-    ^
-    - 1. *yyp*
+- yank a sentence and paste it, notice difference between *p* and *P*
+^
+- yank a word and paste it
+
+^
+*:registers* checkout registers
+^
+- try out a non default register
+
+^
+- delete a line and paste
+^
+- be-careful not to clobber your register
 
 ---
 
--> # Modes <-
+-> # Substitutions <-
 
-*The Four Main Modes of Vim*
+The find and replace of vim
 
 ^
-* _Normal Mode_ (the mode you should spend most of your time in)
-    ^
-    - browsing files
-    - finding words and navigating lines
-    - modify/\copy/\paste lines, words, characters
-    - undo and redo changes
-    - all other modes start from normal mode
+*:s/[find]/[replace]* replace first instance in line
 ^
-
-* _Insert Mode_ (a lot like the default mode in a modeless editor)
-    ^
-    - insert new text
-    - many ways to access
-        - *o O* insert line below or above current line
-        - *i I* start insert before character or start of line
-        - *a A* start insert after character or append end of line
+*:s/[find]/[replace]/g* replace all instances in line
 ^
-
-* _Visual Mode_ (highlight text)
-    ^
-    - used to hightlight text to perfom actions on
-    - can be accessed by *v or V* to select by character or by line
+*:[range]s/[find]/[replace]/g* replace all instances in range
 ^
-
-* _Command Mode_ (execute commands in vim)
-    ^
-    - interact with vim variables, functions and plugins
-    - *:e :w :q* open files from disk to edit, save file and quit vim
-    - *:!* run bash programs from vim
-    - can be accessed by typing *:* in normal mode
+*:%s/[find]/[replace]/g* replace all instances in file
 
 ---
 
--> # Basic Setting <-
-
-_Visual Change_
-
-cursor          *Edit->Profile Preference->Cursor Shape->[Block, Underline]*
-colorscheme     *:set colorscheme*
-
----
-
--> # Efficient File Navigation <-
-
-How to move around easier
-
-^
-* _General Browsing_
-    - *G gg* go to the bottom or top of file
-    ^
-    - *Ctrl+d Ctrl+u* page down and page up
-    ^
-
-* _Targeted Edit_ (get to line or word fast)
-    ^
-    - */ ?* search in front or behind cursor (use to target words and lines)
-    ^
-        - *n N* move to next or prev match
-    ^
-    - *:set incsearch* if you want highlighting help
-    ^
-
-* _Word and Character Movements_ (moving within a line)
-    - *w b* move forward a word or back a word
-    ^
-    - *f[char] F[char]* look forward or back from cursor to [char] in line
-    ^
-        - *;* move to next [char] match
-    ^
-    - *h j k l*  one character movements use only if you miss the mark or very close
-
----
-
--> # End of Day 1 <-
+-> # End of Day 2 <-
 
 More resources
 
-blog    [Why Vim](http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/)
+blog    [Your Problem with Vim is you dont grok Vi](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 video   [Vim from novice to professional](http://derekwyatt.org/vim/tutorials/novice/)

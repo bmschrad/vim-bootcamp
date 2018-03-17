@@ -5,6 +5,6 @@
 [Learn to Speak Vim](https://yanpritzker.com/learn-to-speak-vim-verbs-nouns-and-modifiers-d7bfed1f6b2d)
 
 -> *Screencasts* <-
-[Learing Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)
+[Learning Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)
 [Vim from novice to professional](http://derekwyatt.org/vim/tutorials/novice/)
 [All episodes of Vimcast.org](http://vimcasts.org/episodes/archive)

@@ -169,7 +169,7 @@ How to move around easier
     ^
     - *f[char] F[char]* look forward or back from cursor to [char] in line
     ^
-        - *;* move to next [char] match
+        - *;* *,* move to next or previous [char] match
     ^
     - *h j k l*  one character movements use only if you miss the mark or very close
 
@@ -181,4 +181,4 @@ More resources
 
 blog    [Why Vim](http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/)
 
-video   [Vim from novice to professional](http://derekwyatt.org/vim/tutorials/novice/)
+video   [Learning Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)
