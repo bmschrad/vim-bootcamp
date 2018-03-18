@@ -7,6 +7,7 @@ from sqlalchemy.orm import relationship, backref, sessionmaker
 
 
 conn_string = 'some conn string'
+test_string = 'this is a test of a test'
 Base = declarative_base()
 
 

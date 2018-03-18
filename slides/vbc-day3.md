@@ -25,9 +25,10 @@ Where your files are initially loaded
 
 ^
 * _Ways to Load Your Buffer_
-    - *vim [filename(s)]* load on startup
+    - *vim* [filename(s)] load on startup
     - *:e :Explore* load when in vim
     - load with plugin like NerdTree CtrlP
+
 ^
 * _View and Navigate and Manage Buffers_
     - *:ls* view current buffer
@@ -52,12 +53,12 @@ The viewport into your buffer(s)
 ^
 * _Navigate Windows_
     - *Ctrl-W w* jump between windows
-    - *Ctrl-W [h j k l]* targeted jump between windows
+    - *Ctrl-W (h j k l)* targeted jump between windows
 
 ^
 * _Managing Windows_
     - *Ctrl-W x* swap current window
-    - *:q Ctrl-W c* close current window
+    - *Ctrl-W c :q* close current window
     - *Ctrl-W o* close all windows except current window
 
 ^

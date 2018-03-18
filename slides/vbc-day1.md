@@ -109,6 +109,7 @@ Simple examples of copying an existing line and pasting it to a new line underne
     - modify/\copy/\paste lines, words, characters
     - undo and redo changes
     - all other modes start from normal mode
+    - *Esc* will always bring you back to normal mode
 ^
 
 * _Insert Mode_ (a lot like the default mode in a modeless editor)
